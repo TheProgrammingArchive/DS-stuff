@@ -1,0 +1,41 @@
+Data Structures: A way of organising data in a useful manner.
+Why are they required: They are essential in creating fast and powerful algorithms
+
+
+Examples of abstraction and implementation
+List -> Linked list
+Queue -> LL based Queue, Arr based, Stk based
+Map -> Tree, Hash
+Vehicle -> Any transport
+
+
+Complexity:
+Time and space for an algorithm
+
+-----------------------------------------------------------
+Big O Notation:
+    Upper bound of complexity in the worst case
+    eg: Searching 7 when 7 is last in list
+
+    Notations:
+    n - input size
+    Constant Time: O(1)
+    Log time: O(log n)
+    Linear Time: O(n)
+    Linearithmic: O(n log(n))
+    Quadratic: O(n^2)
+    Cubic: O(n^3)
+    Exponential time: O(b^n) where n > 1
+    Factorial time: O(n!)
+
+    Big O properties:
+        O(n + c) = O(n)
+        O(cn) = O(n), c > 0
+        Since lim n -> inf and n * k where k belongs to real, then n * k is n
+
+
+-----------------------------------------------------------
+
+Linked list:
+A linked list is a sequntial list of nodes that hold data which point to other nodes containing data
+eg: Data -> Data -> Data -> Data -> Null, Last node has null reference.

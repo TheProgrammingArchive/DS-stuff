@@ -1,0 +1,266 @@
+package com.datastructs;
+//
+////@SuppressWarnings("all")
+////public class Main {
+////    static class Tuple<T, X>{
+////        private T obj_t;
+////        private X obj_x;
+////
+////        public Tuple(T t, X x){
+////            this.obj_t = t;
+////            this.obj_x = x;
+////        }
+////
+////        T getTupleIndex0(){
+////            return this.obj_t;
+////        }
+////
+////        X getTupleIndex1(){
+////            return this.obj_x;
+////        }
+////
+////        @Override
+////        public String toString(){
+////            String new_builder = ("(" + this.obj_t + ", " + this.obj_x +" )");
+////            return new_builder.toString();
+////        }
+////    }
+////
+////    public static <T, Y> Tuple<Boolean, Boolean> comparitive(T t, Y y){
+////        boolean type_1 = t.equals(y);
+////        boolean type_2 = false;
+////
+////        if (t == y){
+////            type_2 = true;
+////        }
+////
+////        Tuple<Boolean, Boolean> new_tuple = new Tuple<>(type_1, type_2);
+////
+////        return new_tuple;
+////    }
+////
+////    public static void main(String[] args) {
+////        Integer x = new Integer.;
+////        Integer y = new Integer(1);
+////
+////        if (y.equals(x)){
+////            System.out.println(1);
+////        }
+////
+////        else {
+////            System.out.printf("3");
+////        }
+////    }
+////}
+//
+//import com.Tests.DynamicArrayTest;
+//
+//public class Main {
+//    private interface Animal <T>{
+//       <X> void animalRuns(T velocity, X planar);
+//    }
+//
+//    private static class Cat <T> implements Animal <T>{
+//        private String cat_name;
+//        private String cat_colour;
+//        T cat_data;
+//
+//        @SuppressWarnings("all")
+//        public Cat(){
+//            this("test", "among_s", (T) new Object());
+//        }
+//
+//        public Cat(String cat_name, String cat_colour, T cat_data){
+//            this.cat_name = cat_name;
+//            this.cat_colour = cat_colour;
+//            this.cat_data = cat_data;
+//        }
+//
+//        public String getCatName(){
+//            return cat_name;
+//        }
+//
+//        @Override
+//        public <X> void animalRuns(T velocity, X planar){
+//            System.out.println("Coordinates: " + velocity + ", " + planar);
+//        }
+//
+//        @Override
+//        public String toString(){
+//            return (cat_name + ":" + cat_colour);
+//        }
+//    }
+//
+//    public static void main(String[] args) {
+////        Cat<Integer> new_cat = new Cat<>();
+////        Cat<Integer> old_cat = new Cat<>("Gussy Baka", "balls", 4);
+////        Cat<Integer> creation_Cat = new Cat<>("L", "Ratio", 2);
+////
+////        new_cat.animalRuns(40, 5);
+//    }
+//}
+
+
+//        int[] arr = {1, 2, 3, 4, 5}; // Index = 2
+//        var arr_ = Arrays.copyOfRange(arr, 0, 2);
+//        var arr_x = Arrays.copyOfRange(arr, 3, arr.length);
+//
+//        int[] arr_concat = Arrays.copyOfRange(arr, 0, arr.length);
+//        System.out.println(Arrays.toString(arr_concat));
+
+//        DynamicArray<Integer> arr = new DynamicArray<>();
+//        arr.append(1);
+//        arr.append(4);
+//        arr.append(5545);
+//        arr.append((int)Math.sqrt(49));
+//        arr.append((int)55.4);
+//        arr.append(59);
+//
+//        arr.removeEnd();
+//
+//        System.out.println(arr);
+Integer[] new_array = {5, 6, 6, 45, 6, 3, 1, 4, 7, 8, 1, 3, 5, 5, 6};
+
+        DynamicArray<Integer> new_arr = new DynamicArray<>(new_array);
+
+ ll.appendList(1);DoubleLinkedList<Integer> ll = new DoubleLinkedList<>();
+                          ll.addLast(4);
+                          ll.addLast(66);
+                          ll.addFirst(1);
+                          ll.addFirst(6);
+                          ll.addAtIndex(5, 2);
+                          ll.addAtIndex(-8, 0);
+                          ll.addAtIndex(-8, 5);
+
+                          System.out.println(ll);package com.datastructs;
+
+
+                                                 import com.DataStructuresPackaged.DoubleLinkedList;
+                                                 import com.DataStructuresPackaged.SingleLinkedList;
+                                                 import com.Tests.LinkedList;
+
+                                                 import java.util.Arrays;
+
+                                                 public class Main {
+
+                                                     public static void main(String[] args) {
+                                                         DoubleLinkedList<Integer> list = new DoubleLinkedList<>();
+                                                         for (int i = 0; i < 5; i++){
+                                                             list.appendEnd(i);
+                                                         }
+                                                         System.out.println(list);
+
+                                                         list.appendAtIndex(-3, 1);
+                                                         list.appendAtIndex(-8, 0);
+                                                         list.appendAtIndex(-9, list.getObjectIndex(list.getTailObject()));
+                                                         list.removeBeginning();
+                                                         list.removeEnd();
+                                                         list.removeIndex(1);
+                                                         System.out.println(list + " " + list.getTailObject() + " " + list.getHeadObject() + " " +  list.getObjectIndex(-3));
+                                                     }
+                                                 }
+
+                          ll.removeLast();
+                          ll.removeLast();
+                          ll.removeFirst();
+                          ll.removeLast();
+
+                          System.out.println(ll + " " + ll.getHead() + " " + ll.getTail());
+         ll.appendList(43);
+         ll.insertFirst(0);
+         ll.insertFirst(4);
+         ll.appendList(545);
+         ll.appendList(202);
+         ll.insertAtIndex(3, 2);
+         ll.insertAtIndex(0, 5);
+
+ new_ll.insertAtBeginning(-9);
+         new_ll.insertAtBeginning(-8);
+         System.out.println(new_ll);
+         new_ll.insertAtIndex(5, 4);
+         new_ll.insertAtIndex(8, 7);
+         new_ll.insertAtIndex(4, 4);
+         new_ll.removeEnd();
+         new_ll.removeEnd();
+         new_ll.removeEnd();
+         new_ll.removeFirstIndex();
+         new_ll.removeFirstIndex();
+         new_ll.removeFirstIndex();
+         new_ll.removeEnd();
+         new_ll.removeEnd();
+         new_ll.removeEnd();
+         System.out.println(new_ll);
+         System.out.println(new_ll.getHead());
+         new_ll.removeEnd();
+         System.out.println(new_ll.getHead());
+         System.out.println(new_ll);
+
+DoubleLinkedList<Integer> newlist = new DoubleLinkedList<>();
+        newlist.insertAtEnd(10);
+        newlist.insertAtEnd(9);
+        newlist.insertAtEnd(5);
+        newlist.insertAtEnd(1);
+//        System.out.println(newlist + " " + newlist.getSize());
+        newlist.insertAtIndex(2, 1);
+        newlist.insertAtIndex(2, 1);
+        System.out.println(newlist);
+        System.out.println(newlist + " " + newlist.getSize());
+        newlist.removeLast();
+        newlist.removeLast();
+        newlist.removeLast();
+        System.out.println("----------");
+
+        System.out.println(newlist + " " + newlist.getSize());
+
+
+int[] arr = {1, 2, 3, 4, 5, 6, 7};
+        int i = 0;
+        while (true){
+            if (arr[i] > 4){
+                break;
+            }
+            i++;
+        }
+        System.out.println(arr[i]);
+        //        PriorityQueue<Integer> newQueue = new PriorityQueue<>();
+        //        newQueue.append(1, 1);
+        //        newQueue.append(0, 0);
+        //        newQueue.append(-1, -1);
+        //
+        //        System.out.println(newQueue.getHeadData());
+        //        System.out.println(newQueue);
+
+//        int[] arr = {1, 2, 3, 4, 5, 6, 7};
+//        int i = 0;
+//        while (arr[i] < 5){
+//            i++;
+//        }
+//        System.out.println(arr[i]);
+PriorityQueue<String> pq = new PriorityQueue<>();
+        pq.addSet(2, "Imposter");
+        pq.addSet(1, "H");
+        pq.addSet(10, "Raiot");
+        pq.addSet(5, "Bl");
+        pq.addSet(6, "Gus from the hit game");
+        pq.poll();
+        pq.poll();
+
+        pq.remove(10);
+        pq.remove(6);
+        pq.remove(5);
+
+        pq.addSet(1, "h");
+        pq.addSet(2, "L");
+        pq.addSet(1, "a");
+        pq.addSet(2, "e");
+        pq.addSet(3, "Gussy baka");
+        pq.addSet(0, "L");
+        pq.addSet(5, "E");
+        pq.addSet(4, "A");
+        pq.remove(4);
+        pq.remove("L");
+        pq.poll();
+        pq.poll();
+        pq.remove("E");
+        pq.remove("Gussy baka");
+        System.out.println(pq + " " + pq.getQueueSize());
